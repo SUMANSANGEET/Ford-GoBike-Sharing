@@ -265,7 +265,7 @@ with tabs[0]:
                       annotation_text=f"Mean {df['duration_min'].mean():.1f} min")
         fig.update_layout(xaxis_title="Duration (minutes, capped at 60 for readability)",
                            yaxis_title="Number of trips", showlegend=False, height=380)
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, width="stretch")
         st.markdown('<div class="insight-box">📈 Trip duration is strongly right-skewed — '
                     'the median is well below the mean because of a long tail of very long '
                     'rides. The median, not the mean, is the representative "typical trip".</div>',
