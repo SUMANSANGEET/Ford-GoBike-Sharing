@@ -1,84 +1,150 @@
-# 🚲 Ford GoBike 2018 Ridership Analytics Dashboard
+# 🚴 Ford GoBike Sharing Analytics Dashboard
 
-<div align="center">
+> **An Interactive Data Analytics Dashboard built with Streamlit, Python, SQL, and Plotly to uncover bike-sharing usage patterns and business insights.**
 
-![Python](https://img.shields.io/badge/Python-3.12+-blue?style=for-the-badge&logo=python)
-![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red?style=for-the-badge&logo=streamlit)
-![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-black?style=for-the-badge&logo=pandas)
-![Plotly](https://img.shields.io/badge/Plotly-Interactive_Visualization-3F4F75?style=for-the-badge&logo=plotly)
-![GitHub](https://img.shields.io/badge/Open_Source-Project-success?style=for-the-badge)
-
-### Interactive Business Intelligence Dashboard for Ford GoBike (Bay Wheels) 2018
-
-**Developed by P Suman Sangeet**
-
-</div>
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-Live-red?logo=streamlit)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Charts-3F4F75?logo=plotly)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
-# 📌 Project Overview
+# 🌐 Live Dashboard
 
-This project presents a comprehensive **Exploratory Data Analysis (EDA)** and an **interactive business intelligence dashboard** for the **Ford GoBike (Bay Wheels) 2018 Bike Sharing Dataset**.
+### 🚀 Explore the deployed application
 
-The dashboard enables stakeholders to explore rider behavior, travel patterns, station utilization, customer segmentation, and operational trends through dynamic visualizations and actionable business insights.
+👉 https://ford-gobike-sharing-3t2frkurfciudetbu8quwt.streamlit.app/
 
-The project demonstrates an end-to-end Data Analytics workflow:
+---
 
-- Data Cleaning
-- Feature Engineering
-- Exploratory Data Analysis
-- Interactive Dashboard Development
-- Business Recommendation Generation
-- Streamlit Deployment
+# 📖 Project Overview
+
+Ford GoBike Sharing Analytics is an end-to-end data analytics project that explores bike-sharing trip data to identify rider behavior, travel patterns, peak demand periods, and operational insights.
+
+The dashboard transforms raw trip data into meaningful visualizations and interactive analytics, helping stakeholders make data-driven decisions.
 
 ---
 
 # 🎯 Business Problem
 
-Bike-sharing companies collect millions of ride records every year.
+Bike-sharing companies generate millions of trip records every year.
 
-The challenge is to transform raw trip data into actionable insights that help answer questions such as:
+The objective of this project is to answer questions such as:
 
-- When do customers ride the most?
-- Which stations experience highest demand?
-- How do Subscribers differ from Customers?
-- Which routes require better bike redistribution?
-- How can membership growth be improved?
-
-This dashboard answers these questions through interactive analytics.
-
----
-
-# 📊 Dashboard Features
-
-## 📌 Executive Overview
-
-- Total Trips
-- Average Trip Duration
-- Median Trip Duration
-- Subscriber Percentage
-- Unique Stations
+- Which stations are busiest?
+- What are the peak riding hours?
+- How long do trips usually last?
+- Which user type uses the service the most?
+- Which days experience the highest demand?
+- How can operations be optimized using data?
 
 ---
 
-## ⏰ Time Analysis
+# ✨ Features
 
-- Hourly Ride Pattern
-- Weekday vs Weekend Analysis
-- Monthly Trend Analysis
-- Day of Week Analysis
-- Peak Hour Detection
-- Heatmap Visualization
+## 📊 Interactive Dashboard
 
----
+- KPI Cards
+- Dynamic Filters
+- Responsive Layout
+- Interactive Plotly Charts
 
-## 👥 Customer Analytics
+## 📈 Data Analysis
 
-- Subscriber vs Customer Comparison
+- Trip Duration Analysis
+- User Type Distribution
 - Gender Distribution
-- Rider Age Distribution
-- Age vs Trip Duration
-- Rider Behavior Analysis
+- Daily & Monthly Ride Trends
+- Peak Hour Analysis
+- Station Popularity
+- Age Distribution
+
+## 📉 Visualizations
+
+- Bar Charts
+- Pie Charts
+- Line Charts
+- Scatter Plots
+- Histograms
+- Heatmaps
+
+---
+
+# 📂 Project Structure
+
+```
+Project_4 Ford_Go_Bike_Sharing
+│
+├── app.py
+├── requirements.txt
+├── README.md
+│
+├── data/
+│      ford_gobike.csv
+│
+├── notebooks/
+│      EDA.ipynb
+│
+├── assets/
+│      banner.png
+│      dashboard.png
+│      overview.png
+│      trends.png
+│
+└── images/
+       charts.png
+```
+
+---
+
+# 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|----------|
+| Python | Programming |
+| Streamlit | Dashboard Development |
+| Pandas | Data Processing |
+| NumPy | Numerical Computing |
+| Plotly | Interactive Visualizations |
+| Matplotlib | Statistical Charts |
+| SQLite / SQL | Data Storage & Analytics |
+
+---
+
+# 📊 Dashboard Modules
+
+## 🏠 Home
+
+- Project Overview
+- KPIs
+- Dataset Summary
+
+---
+
+## 🚲 Trip Analytics
+
+- Ride Count
+- Trip Duration
+- Distance Analysis
+- Ride Frequency
+
+---
+
+## 👥 User Analytics
+
+- Subscriber vs Customer
+- Gender Distribution
+- Rider Age Analysis
+
+---
+
+## 📅 Time Analysis
+
+- Peak Hours
+- Peak Days
+- Monthly Trends
+- Seasonal Analysis
 
 ---
 
@@ -86,185 +152,29 @@ This dashboard answers these questions through interactive analytics.
 
 - Top Start Stations
 - Top End Stations
-- Popular Routes
-- Station Map
-- High Demand Corridors
+- Station Popularity
 
 ---
 
-## 📈 Correlation Analysis
+# 📌 Key Performance Indicators (KPIs)
 
-- Correlation Matrix
-- Scatter Matrix
-- Numeric Feature Relationships
-
----
-
-## 💡 Business Recommendations
-
-Data-driven recommendations for:
-
-- Fleet Redistribution
-- Pricing Strategy
-- Membership Growth
-- Weekend Promotions
-- Infrastructure Planning
-- Station Optimization
+- 🚲 Total Trips
+- ⏱ Average Trip Duration
+- 👤 Active Riders
+- 📍 Total Stations
+- 📅 Peak Usage Day
+- 🕒 Peak Usage Hour
 
 ---
 
-# 📂 Project Structure
+# 📈 Key Business Insights
 
-```
-Ford-GoBike-Sharing/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── notebooks/
-│   └── Ford Bike Sharing Project.ipynb
-│
-├── images/
-│
-└── demo_gobike_2018.csv.gz
-```
-
----
-
-# 🛠️ Tech Stack
-
-| Category | Technologies |
-|-----------|--------------|
-| Language | Python |
-| Data Analysis | Pandas, NumPy |
-| Visualization | Plotly |
-| Dashboard | Streamlit |
-| Notebook | Jupyter |
-| Version Control | Git & GitHub |
-
----
-
-# 📈 Exploratory Data Analysis
-
-The project performs:
-
-✔ Data Cleaning
-
-✔ Missing Value Handling
-
-✔ Feature Engineering
-
-✔ Date-Time Processing
-
-✔ Memory Optimization
-
-✔ Outlier Detection
-
-✔ Customer Segmentation
-
-✔ Route Analysis
-
-✔ Statistical Analysis
-
-✔ Correlation Analysis
-
----
-
-# 📊 Dashboard Preview
-
-### Executive Dashboard
-
-- KPI Cards
-- Trip Duration Distribution
-- Rider Composition
-
----
-
-### Time Patterns
-
-- Hourly Trends
-- Monthly Trends
-- Weekday vs Weekend
-- Heatmap
-
----
-
-### Customer Insights
-
-- Subscriber Analysis
-- Customer Analysis
-- Gender Analysis
-- Age Distribution
-
----
-
-### Station Analytics
-
-- Top Stations
-- Popular Routes
-- Interactive Map
-
----
-
-### Business Insights
-
-- Operational Recommendations
-- Customer Growth Opportunities
-- Fleet Optimization
-
----
-
-# 📌 Key Insights
-
-### 🚲 Subscribers dominate the platform
-
-Most rides come from Subscribers, indicating strong commuter usage.
-
----
-
-### ⏰ Clear commuting behavior
-
-Morning and evening peaks reveal daily commuting patterns.
-
----
-
-### 📅 Weekdays outperform weekends
-
-Weekday demand is nearly double compared to weekends.
-
----
-
-### 🛣️ High-demand stations
-
-Transit hubs generate the highest traffic.
-
----
-
-### 👥 Customers take longer rides
-
-Casual customers typically use bikes for leisure.
-
----
-
-### 📈 Age has minimal influence
-
-Age shows very weak correlation with ride duration.
-
----
-
-# 💼 Business Recommendations
-
-- Improve fleet redistribution during peak hours
-- Increase bike availability at transit stations
-- Launch Customer → Subscriber conversion campaigns
-- Promote weekend usage
-- Optimize maintenance schedules
-- Expand bike infrastructure along high-demand routes
+- Identify the busiest bike stations.
+- Discover peak commuting hours.
+- Compare subscriber and customer behavior.
+- Analyze weekday vs weekend usage.
+- Understand trip duration patterns.
+- Explore monthly demand trends.
 
 ---
 
@@ -273,10 +183,10 @@ Age shows very weak correlation with ride duration.
 Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Ford-GoBike-Sharing.git
+git clone https://github.com/yourusername/Ford-GoBike-Sharing.git
 ```
 
-Move into the project
+Navigate to the project directory
 
 ```bash
 cd Ford-GoBike-Sharing
@@ -296,95 +206,79 @@ streamlit run app.py
 
 ---
 
-# 📦 Requirements
+# 🌐 Deployment
 
-- Python 3.12+
-- Streamlit
-- Pandas
-- NumPy
-- Plotly
+The application is deployed on **Streamlit Cloud**.
 
-Install:
+🔗 https://ford-gobike-sharing-3t2frkurfciudetbu8quwt.streamlit.app/
 
-```bash
-pip install -r requirements.txt
+---
+
+# 📷 Dashboard Preview
+
+## Home Dashboard
+
+```
+assets/dashboard.png
 ```
 
+## User Analytics
+
+```
+assets/users.png
+```
+
+## Station Analysis
+
+```
+assets/stations.png
+```
+
+## Time Analysis
+
+```
+assets/time.png
+```
+
+*(Replace the placeholders above with actual screenshots stored in the `assets/` folder.)*
+
 ---
 
-# 📊 Dataset
+# 🔮 Future Enhancements
 
-**Ford GoBike System Data (2018)**
-
-Contains:
-
-- Trip Duration
-- Rider Type
-- Gender
-- Birth Year
-- Start Station
-- End Station
-- Start Time
-- End Time
-- Station Coordinates
+- Real-time bike availability
+- Interactive map visualization
+- Demand forecasting with Machine Learning
+- Route optimization
+- Predictive analytics for station balancing
+- User segmentation using clustering
 
 ---
 
-# 🎯 Skills Demonstrated
+# 📚 Skills Demonstrated
 
+- Exploratory Data Analysis (EDA)
 - Data Cleaning
-- Data Wrangling
 - Feature Engineering
-- Exploratory Data Analysis
-- Business Intelligence
 - Dashboard Development
-- Interactive Visualization
+- Business Intelligence
+- Data Visualization
+- SQL Analytics
 - Python Programming
-- Statistical Analysis
-- Git & GitHub
-- Streamlit Deployment
-
----
-
-# 🌟 Future Enhancements
-
-- Real-time Bike Sharing API
-- Predictive Demand Forecasting
-- Machine Learning Models
-- Route Recommendation System
-- Weather Impact Analysis
-- Power BI Dashboard
-- SQL Integration
-- Docker Deployment
+- Storytelling with Data
 
 ---
 
 # 👨‍💻 Author
 
-## **P Suman Sangeet**
+**Lincon Prusty**
 
-**PGDM – Big Data Analytics**
+PGDM in Big Data Analytics
 
-Data Analyst | Python Developer | Business Intelligence Enthusiast
-
-GitHub:
-https://github.com/SUMANSANGEET
-
-LinkedIn:
-(Add Your LinkedIn)
+Data Analytics & Generative AI Enthusiast
 
 ---
 
 # ⭐ Support
 
-If you found this project helpful,
-
-⭐ Star this repository
-
-🍴 Fork the project
-
-📢 Share with others
-
----
-
-## Thank You ❤️
+If you found this project helpful, consider giving the repository a **⭐ Star** on GitHub.
